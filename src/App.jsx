@@ -1,11 +1,14 @@
-import { useState } from "react";
+import { Hero, Navbar, Wrapper } from "./components";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-    
+      <div className="h-screen w-full bg-zinc-950">
+        <Navbar />
+        <Wrapper>
+          <Hero />
+        </Wrapper>
+      </div>
     </>
   );
 }
