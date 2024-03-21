@@ -1,8 +1,9 @@
 import React from "react";
+import PassCards from "../PassCards/PassCards";
 
 function Hero() {
   return (
-    <div className="w-full h-full px-10 py-5 flex justify-center items-start">
+    <div className="w-full h-full px-10 py-5 flex flex-col justify-center items-center gap-5">
       <div className="flex flex-col justify-center items-center gap-5 tracking-tighter">
         <h1 className="text-5xl font-bold text-gray-200">Keep your password</h1>
 
@@ -14,6 +15,14 @@ function Hero() {
             Add password
           </div>
         </button>
+      </div>
+      <div className="w-full h-96 gap-2 flex flex-col">
+        <PassCards
+          website={"www.google.com"}
+          username={"Sagar01010"}
+          email={"sagar@mail.com"}
+          password={"******"}
+        />
       </div>
     </div>
   );
